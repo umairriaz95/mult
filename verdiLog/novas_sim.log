@@ -1,0 +1,58 @@
+Invoking simulator...
+
+./simv -sml=verdi +UVM_VERDI_TRACE=UVM_AWARE +fsdb+gate=off -ucli2Proc -ucli
+debImport "-i" "-simflow" "-dbdir" "./simv.daidir"
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12_Full64; Runtime version R-2020.12_Full64;  Oct 15 12:45 2022
+
+*Verdi* Loading libsscore_vcs202012.so
+
+FSDB Dumper for VCS, Release Verdi_R-2020.12, Linux x86_64/64bit, 11/19/2020
+(C) 1996 - 2020 by Synopsys, Inc.
+
+*Verdi* : Create FSDB file '/home/uriaz/misc/mult/inter.fsdb'
+
+*Verdi* : Flush all FSDB Files at 0 ps.
+
+*Verdi* : Enable RPC Server(314119)
+
+srcTBInvokeSim
+Verdi>fsdbDumpvars 1 "tb.u0"  +all +trace_process;fsdbDumpflush 
+
+*Verdi* : Begin traversing the scope (tb.u0), layer (1).
+*Verdi* : Enable +trace_process and +all dumping.
+*Verdi* : End of traversing.
+*Verdi* : Flush all FSDB Files at 0 ps.
+
+Verdi>run
+$finish called from file "mult_tb.sv", line 33.
+$finish at simulation time               250000
+Simulation complete, time is 250000 ps.
+mult_tb.sv, 33 :   #100 $finish;
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 250000 ps
+CPU Time:      0.090 seconds;       Data structure size:   0.0Mb
+Sat Oct 15 12:46:20 2022
+srcTBSimQuit
+wvZoomAll -win $_nWave3
+wvSelectAll -win $_nWave3
+wvSelectSignal -win $_nWave3 {( "u0" 3 )} 
+wvSelectSignal -win $_nWave3 {( "u0" 3 4 )} 
+wvSelectSignal -win $_nWave3 {( "u0" 3 4 5 )} 
+wvSelectSignal -win $_nWave3 {( "u0" 3 4 5 )} 
+wvSetRadix -win $_nWave3 -format UDec
+wvSetCursor -win $_nWave3 43379.534565 -snap {("G2" 0)}
+wvSetCursor -win $_nWave3 71377.481177 -snap {("u0" 5)}
+verdiDockWidgetRestore -dock windowDock_nWave_3
+srcHBSelect "tb.u0" -win $_nTrace1
+srcSetScope "tb.u0" -delim "." -win $_nTrace1
+srcHBSelect "tb.u0" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "valid" -line 33 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave3
+verdiDockWidgetMaximize -dock windowDock_nWave_3
+wvSetCursor -win $_nWave3 85549.281314 -snap {("G2" 0)}
+wvSelectGroup -win $_nWave3 {G2}
+debExit

@@ -1,0 +1,9 @@
+Command Line: /eda/synopsys/2020-21/RHELx86/VERDI_2020.12/platform/LINUXAMD64/bin/Novas -i -simflow -simBin ./simv -simOpt  
+uname(Linux satu 5.8.0-38-generic #43~20.04.1-Ubuntu SMP Tue Jan 12 16:39:47 UTC 2021 x86_64)
+type= DS_SCOPE element= 1 field= 1
+VERILOG tb
+VERILOG u0
+-----
+second field= DebussyLib
+third field= mult_8x8
+au time 138.908158 11.394696 1.685443 delta 181686272 181686272 total 607551488 607551488

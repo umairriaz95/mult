@@ -1,0 +1,47 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : mult_8x8
+Version: R-2020.09-SP2
+Date   : Sat Oct 15 13:20:37 2022
+****************************************
+
+Operating Conditions: nom_pvt   Library: lsi_10k
+Wire Load Model Mode: top
+
+  Startpoint: par_prod2H_reg_reg[1]
+              (rising edge-triggered flip-flop)
+  Endpoint: prod[15] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  par_prod2H_reg_reg[1]/CP (FD2)                          0.00       0.00 r
+  par_prod2H_reg_reg[1]/Q (FD2)                           1.47       1.47 f
+  add_2_root_add_0_root_add_93_3/U1_5/CO (FA1A)           2.27       3.75 f
+  add_2_root_add_0_root_add_93_3/U1_6/CO (FA1A)           1.17       4.92 f
+  add_2_root_add_0_root_add_93_3/U1_7/CO (FA1A)           1.24       6.16 f
+  U40/Z (EO)                                              1.19       7.35 f
+  add_0_root_add_0_root_add_93_3/B[8] (mult_8x8_DW01_add_2)
+                                                          0.00       7.35 f
+  add_0_root_add_0_root_add_93_3/U1_8/CO (FA1A)           2.27       9.63 f
+  add_0_root_add_0_root_add_93_3/U1_9/CO (FA1A)           1.17      10.80 f
+  add_0_root_add_0_root_add_93_3/U1_10/CO (FA1A)          1.17      11.97 f
+  add_0_root_add_0_root_add_93_3/U1_11/CO (FA1A)          1.17      13.15 f
+  add_0_root_add_0_root_add_93_3/U1_12/CO (FA1A)          1.24      14.39 f
+  add_0_root_add_0_root_add_93_3/U6/Z (AN2P)              0.94      15.33 f
+  add_0_root_add_0_root_add_93_3/U5/Z (ND2)               0.78      16.11 r
+  add_0_root_add_0_root_add_93_3/U4/Z (EN)                1.06      17.17 f
+  add_0_root_add_0_root_add_93_3/SUM[15] (mult_8x8_DW01_add_2)
+                                                          0.00      17.17 f
+  prod[15] (out)                                          0.00      17.17 f
+  data arrival time                                                 17.17
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

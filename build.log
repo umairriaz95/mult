@@ -1,0 +1,35 @@
+
+Warning-[LINX_KRNL] Unsupported Linux kernel
+  Linux kernel '5.8.0-38-generic' is not supported.
+  Supported versions are 2.4* or 2.6*.
+
+
+Warning-[UNKWN_OPTVSIM] Unknown option passed
+  Ignoring unknown option '-vhdl' passed to 'vcs' and continuing compilation.
+
+
+Warning-[DEBUG_DEP] Option will be deprecated
+  The option '-debug_all' will be deprecated in a future release.  Please use 
+  '-debug_acc+all+dmptf -debug_region+cell+encrypt' instead.
+
+Command: vcs -full64 -notice -timescale=1ns/1ps -nc -l build.log -sverilog report_mult_8x8/mult_8x8_gtlvl.v \
+mult_tb.sv -vhdl /eda/synopsys/2020-21/RHELx86/SYN_2020.09-SP2/libraries/syn/lsi_10k_components.vhd \
+-LDFLAGS -Wl,--no-as-needed -debug_all -kdb -o synth
+
+Warning-[DEBUG_DEP] Option will be deprecated
+  The option '-debug_all' will be deprecated in a future release.  Please use 
+  '-debug_acc+all -debug_region+cell+encrypt' instead.
+
+Parsing design file 'report_mult_8x8/mult_8x8_gtlvl.v'
+Parsing design file 'mult_tb.sv'
+Parsing design file '/eda/synopsys/2020-21/RHELx86/SYN_2020.09-SP2/libraries/syn/lsi_10k_components.vhd'
+
+Error-[SE] Syntax error
+  Following verilog source has syntax error :
+  "/eda/synopsys/2020-21/RHELx86/SYN_2020.09-SP2/libraries/syn/lsi_10k_components.vhd",
+  2: token is '--'
+  ----------------------------------------------------------------
+    ^
+
+1 warning
+1 error

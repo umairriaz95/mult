@@ -1,0 +1,54 @@
+simSetSimulator "-vcssv" -exec "./simv" -args " " -uvmDebug on
+debImport "-i" "-simflow" "-dbdir" "./simv.daidir"
+srcTBInvokeSim
+srcHBSelect "tb.u0" -win $_nTrace1
+srcHBSelect "tb.u0" -win $_nTrace1
+wvCreateWindow
+srcHBAddObjectToWave -clipboard
+wvDrop -win $_nWave3
+srcHBSelect "tb.u0" -win $_nTrace1
+srcSetScope "tb.u0" -delim "." -win $_nTrace1
+srcHBSelect "tb.u0" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "valid" -line 33 -pos 1 -win $_nTrace1
+srcSelect -signal "valid_next" -line 34 -pos 1 -win $_nTrace1
+srcAddSelectedToWave -clipboard -win $_nTrace1
+wvDrop -win $_nWave3
+verdiDockWidgetMaximize -dock windowDock_nWave_3
+srcTBRunSim
+srcTBSimQuit
+wvZoomAll -win $_nWave3
+wvSetCursor -win $_nWave3 43552.361396 -snap {("G2" 0)}
+wvSelectGroup -win $_nWave3 {G2}
+wvSelectSignal -win $_nWave3 {( "u0" 5 )} 
+wvSelectSignal -win $_nWave3 {( "u0" 5 )} 
+wvSetRadix -win $_nWave3 -format UDec
+wvSetCursor -win $_nWave3 69822.039699 -snap {("u0" 6)}
+wvSelectSignal -win $_nWave3 {( "u0" 3 )} 
+wvSelectSignal -win $_nWave3 {( "u0" 3 4 )} 
+wvSelectSignal -win $_nWave3 {( "u0" 3 4 )} 
+wvSetRadix -win $_nWave3 -format UDec
+wvSetCursor -win $_nWave3 80537.303217 -snap {("G2" 0)}
+wvSetCursor -win $_nWave3 73624.229979 -snap {("u0" 6)}
+wvSetCursor -win $_nWave3 69994.866530 -snap {("u0" 6)}
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+debExit

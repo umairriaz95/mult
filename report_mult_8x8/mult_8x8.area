@@ -1,0 +1,47 @@
+ 
+****************************************
+Report : area
+Design : mult_8x8
+Version: R-2020.09-SP2
+Date   : Sat Oct 15 13:20:37 2022
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    lsi_10k (File: /eda/synopsys/2020-21/RHELx86/SYN_2020.09-SP2/libraries/syn/lsi_10k.db)
+
+Number of ports:                          118
+Number of nets:                           343
+Number of cells:                          227
+Number of combinational cells:            164
+Number of sequential cells:                49
+Number of macros/black boxes:               0
+Number of buf/inv:                         34
+Number of references:                      11
+
+Combinational area:                440.000000
+Buf/Inv area:                       34.000000
+Noncombinational area:             377.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                   817.000000
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  --------------------
+mult_8x8                           817.0000    100.0  117.0000   377.0000  0.0000  mult_8x8
+add_0_root_add_0_root_add_93_3      81.0000      9.9   81.0000     0.0000  0.0000  mult_8x8_DW01_add_2
+mult_46                            121.0000     14.8  121.0000     0.0000  0.0000  mult_8x8_DW02_mult_0
+mult_47                            121.0000     14.8  121.0000     0.0000  0.0000  mult_8x8_DW02_mult_1
+--------------------------------  ---------  -------  --------  ---------  ------  --------------------
+Total                                                 440.0000   377.0000  0.0000
+
+1

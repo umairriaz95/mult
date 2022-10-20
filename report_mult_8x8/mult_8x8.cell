@@ -1,0 +1,126 @@
+ 
+****************************************
+Report : cell
+Design : mult_8x8
+Version: R-2020.09-SP2
+Date   : Sat Oct 15 13:20:37 2022
+****************************************
+
+Attributes:
+   BO - reference allows boundary optimization
+    b - black box (unknown)
+    h - hierarchical
+   mo - map_only
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U13                       IVP             lsi_10k         1.000000  
+U14                       IVP             lsi_10k         1.000000  
+U15                       IVP             lsi_10k         1.000000  
+U16                       IVP             lsi_10k         1.000000  
+U17                       IVP             lsi_10k         1.000000  
+U18                       IVP             lsi_10k         1.000000  
+U19                       IVP             lsi_10k         1.000000  
+U20                       IVP             lsi_10k         1.000000  
+U21                       IVP             lsi_10k         1.000000  
+U22                       IVP             lsi_10k         1.000000  
+U23                       IVP             lsi_10k         1.000000  
+U24                       AO2             lsi_10k         2.000000  
+U25                       IVP             lsi_10k         1.000000  
+U26                       AO2             lsi_10k         2.000000  
+U27                       IVP             lsi_10k         1.000000  
+U28                       AO2             lsi_10k         2.000000  
+U29                       IVP             lsi_10k         1.000000  
+U30                       AO2             lsi_10k         2.000000  
+U31                       EO              lsi_10k         3.000000  
+U32                       ND2             lsi_10k         1.000000  
+U33                       AN2             lsi_10k         2.000000  
+U34                       EO              lsi_10k         3.000000  
+U35                       AN2             lsi_10k         2.000000  
+U36                       EO              lsi_10k         3.000000  
+U37                       AN2             lsi_10k         2.000000  
+U38                       EO              lsi_10k         3.000000  
+U39                       AN2             lsi_10k         2.000000  
+U40                       EO              lsi_10k         3.000000  
+U41                       AN2             lsi_10k         2.000000  
+U42                       EO              lsi_10k         3.000000  
+U43                       EO              lsi_10k         3.000000  
+U44                       AN2             lsi_10k         2.000000  
+U45                       EO              lsi_10k         3.000000  
+U46                       AN2             lsi_10k         2.000000  
+U47                       EO              lsi_10k         3.000000  
+U48                       AN2             lsi_10k         2.000000  
+U49                       EO              lsi_10k         3.000000  
+add_0_root_add_0_root_add_93_3
+                          mult_8x8_DW01_add_2             81.000000 BO, h
+add_1_root_add_0_root_add_93_3/U1_9
+                          FA1A            lsi_10k         8.000000  mo, r
+add_1_root_add_0_root_add_93_3/U1_10
+                          FA1A            lsi_10k         8.000000  mo, r
+add_1_root_add_0_root_add_93_3/U1_11
+                          FA1A            lsi_10k         8.000000  mo, r
+add_2_root_add_0_root_add_93_3/U1_5
+                          FA1A            lsi_10k         8.000000  mo, r
+add_2_root_add_0_root_add_93_3/U1_6
+                          FA1A            lsi_10k         8.000000  mo, r
+add_2_root_add_0_root_add_93_3/U1_7
+                          FA1A            lsi_10k         8.000000  mo, r
+currSt_reg[0]             FD2             lsi_10k         9.000000  n
+m1_in1_reg[0]             LD1             lsi_10k         5.000000  n
+m1_in1_reg[1]             LD1             lsi_10k         5.000000  n
+m1_in1_reg[2]             LD1             lsi_10k         5.000000  n
+m1_in1_reg[3]             LD1             lsi_10k         5.000000  n
+m1_in2_reg[0]             LD1             lsi_10k         5.000000  n
+m1_in2_reg[1]             LD1             lsi_10k         5.000000  n
+m1_in2_reg[2]             LD1             lsi_10k         5.000000  n
+m1_in2_reg[3]             LD1             lsi_10k         5.000000  n
+m2_in1_reg[0]             LD1             lsi_10k         5.000000  n
+m2_in1_reg[1]             LD1             lsi_10k         5.000000  n
+m2_in1_reg[2]             LD1             lsi_10k         5.000000  n
+m2_in1_reg[3]             LD1             lsi_10k         5.000000  n
+m2_in2_reg[0]             LD1             lsi_10k         5.000000  n
+m2_in2_reg[1]             LD1             lsi_10k         5.000000  n
+m2_in2_reg[2]             LD1             lsi_10k         5.000000  n
+m2_in2_reg[3]             LD1             lsi_10k         5.000000  n
+mult_46                   mult_8x8_DW02_mult_0            121.000000
+                                                                    BO, h
+mult_47                   mult_8x8_DW02_mult_1            121.000000
+                                                                    BO, h
+par_prod1H_reg_reg[0]     FD2             lsi_10k         9.000000  n
+par_prod1H_reg_reg[1]     FD2             lsi_10k         9.000000  n
+par_prod1H_reg_reg[2]     FD2             lsi_10k         9.000000  n
+par_prod1H_reg_reg[3]     FD2             lsi_10k         9.000000  n
+par_prod1H_reg_reg[4]     FD2             lsi_10k         9.000000  n
+par_prod1H_reg_reg[5]     FD2             lsi_10k         9.000000  n
+par_prod1H_reg_reg[6]     FD2             lsi_10k         9.000000  n
+par_prod1H_reg_reg[7]     FD2             lsi_10k         9.000000  n
+par_prod1L_reg_reg[0]     FD2             lsi_10k         9.000000  n
+par_prod1L_reg_reg[1]     FD2             lsi_10k         9.000000  n
+par_prod1L_reg_reg[2]     FD2             lsi_10k         9.000000  n
+par_prod1L_reg_reg[3]     FD2             lsi_10k         9.000000  n
+par_prod1L_reg_reg[4]     FD2             lsi_10k         9.000000  n
+par_prod1L_reg_reg[5]     FD2             lsi_10k         9.000000  n
+par_prod1L_reg_reg[6]     FD2             lsi_10k         9.000000  n
+par_prod1L_reg_reg[7]     FD2             lsi_10k         9.000000  n
+par_prod2H_reg_reg[0]     FD2             lsi_10k         9.000000  n
+par_prod2H_reg_reg[1]     FD2             lsi_10k         9.000000  n
+par_prod2H_reg_reg[2]     FD2             lsi_10k         9.000000  n
+par_prod2H_reg_reg[3]     FD2             lsi_10k         9.000000  n
+par_prod2H_reg_reg[4]     FD2             lsi_10k         9.000000  n
+par_prod2H_reg_reg[5]     FD2             lsi_10k         9.000000  n
+par_prod2H_reg_reg[6]     FD2             lsi_10k         9.000000  n
+par_prod2H_reg_reg[7]     FD2             lsi_10k         9.000000  n
+par_prod2L_reg_reg[0]     FD2             lsi_10k         9.000000  n
+par_prod2L_reg_reg[1]     FD2             lsi_10k         9.000000  n
+par_prod2L_reg_reg[2]     FD2             lsi_10k         9.000000  n
+par_prod2L_reg_reg[3]     FD2             lsi_10k         9.000000  n
+par_prod2L_reg_reg[4]     FD2             lsi_10k         9.000000  n
+par_prod2L_reg_reg[5]     FD2             lsi_10k         9.000000  n
+par_prod2L_reg_reg[6]     FD2             lsi_10k         9.000000  n
+par_prod2L_reg_reg[7]     FD2             lsi_10k         9.000000  n
+--------------------------------------------------------------------------------
+Total 95 cells                                            817.000000
+1

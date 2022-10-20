@@ -1,0 +1,64 @@
+Invoking simulator...
+
+./simv -sml=verdi +UVM_VERDI_TRACE=UVM_AWARE +fsdb+gate=off -ucli2Proc -ucli
+debImport "-i" "-simflow" "-dbdir" "./simv.daidir"
+*Verdi* Loading libsscore_vcs202012.so
+
+*Verdi* : Enable RPC Server(3995311)
+
+srcTBInvokeSim
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version R-2020.12_Full64; Runtime version R-2020.12_Full64;  Oct 15 00:07 2022
+Verdi>fsdbDumpvars 1 "tb.u0"  +all +trace_process;fsdbDumpflush 
+
+*Verdi* : Begin traversing the scope (tb.u0), layer (1).
+*Verdi* : Enable +trace_process and +all dumping.
+*Verdi* : End of traversing.
+*Verdi* : Flush all FSDB Files at 0 ps.
+
+Verdi>run
+$finish called from file "mult_tb.sv", line 33.
+$finish at simulation time               250000
+Simulation complete, time is 250000 ps.
+mult_tb.sv, 33 :   #100 $finish;
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 250000 ps
+CPU Time:      0.080 seconds;       Data structure size:   0.0Mb
+Sat Oct 15 00:08:05 2022
+srcTBSimQuit
+wvZoomAll -win $_nWave3
+wvSetCursor -win $_nWave3 43552.361396 -snap {("G2" 0)}
+wvSelectGroup -win $_nWave3 {G2}
+wvSelectSignal -win $_nWave3 {( "u0" 5 )} 
+wvSelectSignal -win $_nWave3 {( "u0" 5 )} 
+wvSetRadix -win $_nWave3 -format UDec
+wvSetCursor -win $_nWave3 69822.039699 -snap {("u0" 6)}
+wvSelectSignal -win $_nWave3 {( "u0" 3 )} 
+wvSelectSignal -win $_nWave3 {( "u0" 3 4 )} 
+wvSelectSignal -win $_nWave3 {( "u0" 3 4 )} 
+wvSetRadix -win $_nWave3 -format UDec
+wvSetCursor -win $_nWave3 80537.303217 -snap {("G2" 0)}
+wvSetCursor -win $_nWave3 73624.229979 -snap {("u0" 6)}
+wvSetCursor -win $_nWave3 69994.866530 -snap {("u0" 6)}
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+debExit
